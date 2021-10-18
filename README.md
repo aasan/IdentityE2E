@@ -6,7 +6,8 @@ A test automation framework developed using Selenium, Java, Cucumber to generate
 To set up this project to the local machine. See Installation section.
 ### Note: 
 ```
-For future tasks multiple input files can be passed in below steps i.e. "file1.txt,file2,txt,file3.txt"
+For future tasks multiple input files can be passed in below steps of feature file i.e. "file1.txt,file2,txt,file3.txt"
+ Given I get all cars data from the input test file "car_input.txt"
 ```
 
 

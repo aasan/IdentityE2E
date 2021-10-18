@@ -3,6 +3,7 @@ Feature: Verify Data provided in input file exists on the https://cartaxcheck.co
 
   @RegistrationCheck
   Scenario: Verify Data from input file website and compare to out file
+    #   For future tasks multiple input files can be passed in below steps i.e. "file1.txt,file2,txt,file3.txt"
     Given I get all cars data from the input test file "car_input.txt"
     And   I read data from file and get all car registration match format
     Then  I should get list of all car registration

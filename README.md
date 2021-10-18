@@ -31,15 +31,10 @@ The Select File or Directory to Import dialog will open.
 4. Click **Open**.
 5. The **Import Project** dialog will opens:
 6. In the dialog For the **Import project from external model** value, select **Maven** and click **Next**.
-7. Click **Next**.
-8. Maven project should be selected for import
-10. Click **Next**.
-11. The **Please select project SDK screen** will opens.
-12. Make sure the correct **SDK** is selected and click **Next**.
-13. Change the **project name** and location if you like, and click **Finish**.
-14. **Project** should be imported, In left Panel **pom.xml** should be shown
-14. Select **pom.xml** (right click ) select **Maven** and then click **Reimport**
-15. All **External Libraries** will be downloaded
+7. Click **Finish**.
+8. **Project** should be imported, In left Panel **pom.xml** should be shown
+9. Select **pom.xml** (right click ) select **Maven** and then click **Reimport**
+10. All **External Libraries** will be downloaded
 
 
 ## Running the tests
@@ -48,7 +43,14 @@ Test can be executed by running a feature file or using command line with below 
 ```
 mvn clean install
 ```
-
+To generate HTML Report
+```
+mvn test
+```
+HTML Report can be viewed in the Target folder i.e.
+```
+target/Report/cucumber-reports/cucumber-html-reports/Features-CarRegistrationCheck-feature.html
+```
 
 ## Links to Download Pre-requisite
 

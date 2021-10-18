@@ -84,10 +84,13 @@ public class CarRegistrationCheck {
                 carYear.add("No Data Found");
             vehicleNotFound.get(0).click();
                      }
-            carRegistrationPageObj.burgerMenu.click();
-            Thread.sleep(2000);
-            carRegistrationPageObj.freeCarCheckLink.click();
+            if(i<carRegList.size()-1) {
+                carRegistrationPageObj.burgerMenu.click();
+                Thread.sleep(2000);
+                carRegistrationPageObj.freeCarCheckLink.click();
+            }
         }
+        driver.quit();
     }
 
     @Then("^I compare each Car Registration information to data stored in output file \"([^\"]*)\"$")

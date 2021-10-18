@@ -4,6 +4,11 @@ A test automation framework developed using Selenium, Java, Cucumber to generate
 
 ## Getting Started
 To set up this project to the local machine. See Installation section.
+### Note: 
+```
+For future tasks multiple input files can be passed in below steps i.e. "file1.txt,file2,txt,file3.txt"
+```
+
 
 ### Prerequisites
 

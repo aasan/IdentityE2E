@@ -46,7 +46,6 @@ public class CarRegistrationCheck {
 
     @Then("^I should get list of all car registration$")
     public void i_should_get_list_of_all_car_registration()  {
-//        Assert.assertTrue("",carRegList.size()<0);
         Assert.assertTrue(carRegList.size()>0,"Data from file do not contain any matching Car Registration data");
     }
 
@@ -55,8 +54,7 @@ public class CarRegistrationCheck {
         driver.navigate().to("https://cartaxcheck.co.uk/");
 
     }
-
-
+    
     @Then("^I should see \"([^\"]*)\" heading$")
     public void i_should_see_heading(String heading) throws Throwable {
         Assert.assertTrue(carRegistrationPageObj.freeCarCheckHeading.getText().equals(heading));

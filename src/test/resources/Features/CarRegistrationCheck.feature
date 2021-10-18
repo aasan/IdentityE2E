@@ -1,6 +1,5 @@
 # Identity E2E testing exercise
-Feature: Verify Data provided in input file exists on the https://cartaxcheck.co.uk/ website And
-  compare data from the web page to output File
+Feature: Verify Data provided in input file exists on the https://cartaxcheck.co.uk/ website and compare data from the web page to output File
 
   @RegistrationCheck
   Scenario: Verify Data from input file website and compare to out file
